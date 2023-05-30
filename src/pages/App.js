@@ -54,14 +54,14 @@ async function search(){
     .then(data => {
       setArtist(data.artists);
     });
-    // console.log(artists);
+    console.log(artist);
 
   var topTracks = await fetch('https://api.spotify.com/v1/artists/' + artistID + '/top-tracks?country=BR', searchParameters)
     .then(response => response.json())
     .then(data => {
       setTracks(data.tracks);
     });
-    // console.log(tracks)   
+    console.log(topTracks)    
 }
 
 //funcao para alterar classe apos a pesquisa
