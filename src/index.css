@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: rgb(3, 144, 57);
+  background: linear-gradient(344deg, rgb(0, 26, 11) 0%, rgb(16, 145, 65) 100%); */
+
+  background: rgb(18,18,18);
+  background: linear-gradient(0deg, rgba(18,18,18,1) 59%, rgba(29,185,84,1) 97%, rgba(30,215,96,1) 100%);
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+card {
+  background: rgba(0,0,0,0.5);
+}
+
+*{
+  color: rgba(255, 255, 255, 0.605);
+}
+
+audio::-webkit-media-controls-panel {
+  padding-left: 2.85em;
+  background-color: #1db954;
+  border: none;
+}
+
+audio {
+  width: 100px !important;
+  height: 40px;
+}
+
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+  display: none !important;
+}
+
+@media (max-width:550px) {
+  audio {
+    width: 80px !important;
+    height: 30px;
+  }
+}
+
